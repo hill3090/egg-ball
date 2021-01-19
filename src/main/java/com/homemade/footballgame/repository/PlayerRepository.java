@@ -7,5 +7,6 @@ import com.homemade.footballgame.models.Player;
 public interface PlayerRepository extends JpaRepository<Player, Long> {
 	
 	Player findByName(String name);
+
 	
 }
