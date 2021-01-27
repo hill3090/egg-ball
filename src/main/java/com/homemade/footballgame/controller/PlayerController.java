@@ -40,6 +40,7 @@ public class PlayerController {
 	}
 	
 	// Get a specific player
+	// String id
 	@GetMapping("/players/{id}")
 	ResponseEntity<?> getPlayer(@PathVariable String id){
 		Optional<Player> player = playerRepository.findById(id);
@@ -64,6 +65,7 @@ public class PlayerController {
 	}*/
 	
 	// Delete a player
+	// String id used
 	@DeleteMapping("/player/{id}")
 	ResponseEntity<?> deleteCategory(@PathVariable String id)	{
 		playerRepository.deleteById(id);
