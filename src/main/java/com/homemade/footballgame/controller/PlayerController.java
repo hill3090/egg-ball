@@ -41,7 +41,7 @@ public class PlayerController {
 	
 	// Get a specific player
 	@GetMapping("/players/{id}")
-	ResponseEntity<?> getPlayer(@PathVariable Long id){
+	ResponseEntity<?> getPlayer(@PathVariable String id){
 		Optional<Player> player = playerRepository.findById(id);
 		 return player.map(response -> ResponseEntity.ok().body(response))
 				 .orElse(new ResponseEntity<>(HttpStatus.NOT_FOUND));
@@ -65,7 +65,7 @@ public class PlayerController {
 	
 	// Delete a player
 	@DeleteMapping("/player/{id}")
-	ResponseEntity<?> deleteCategory(@PathVariable Long id)	{
+	ResponseEntity<?> deleteCategory(@PathVariable String id)	{
 		playerRepository.deleteById(id);
 		return ResponseEntity.ok().build();
 	}
