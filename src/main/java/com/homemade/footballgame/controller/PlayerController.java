@@ -57,12 +57,12 @@ public class PlayerController {
 	}
 	
 	// Modify an existing player
-	/*@PutMapping("player/{id}")
+	@PutMapping("player/{id}")
 	ResponseEntity<Player> updatePlayer(@Valid @RequestBody Player player)	{
 		Player result = playerRepository.save(player);
 		return ResponseEntity.ok().body(result);
 
-	}*/
+	}
 	
 	// Delete a player
 	// String id used
