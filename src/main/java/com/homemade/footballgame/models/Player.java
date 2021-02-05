@@ -31,4 +31,5 @@ public class Player {
 	private String email;
 	private String funnyFact;
 	private int score;
+	private int secret;
 }
