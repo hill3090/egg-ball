@@ -31,6 +31,4 @@ public class Player {
 	private String email;
 	private String funnyFact;
 	private int score;
-	// New Column added
-	private int secret;
 }
