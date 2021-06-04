@@ -1,2 +1,2 @@
 # FantasyFootballGame
-Small game to keep track of fantasy football scores
+Spring Boot backend used to keep track of player statistics
